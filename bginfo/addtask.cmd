@@ -1,0 +1,1 @@
+SCHTASKS /Create /SC WEEKLY /D SUN /ST 09:10 /TN "System Info" /RU SYSTEM /TR "C:\bginfo\BGInfo.exe C:\bginfo\bginfo.bgi /Timer:0 /Silent /NoLicPrompt"

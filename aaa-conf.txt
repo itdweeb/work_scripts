@@ -1,0 +1,28 @@
+tacacs-server host 10.95.6.201
+tacacs-server host 10.95.6.202
+tacacs-server directed-request
+tacacs-server key Acs2Manedu
+aaa new-model
+aaa authentication login default group tacacs+ local
+aaa authentication enable default group tacacs+ line
+aaa authorization console
+aaa authorization exec default group tacacs+ if-authenticated
+aaa accounting exec default start-stop group tacacs+
+aaa accounting commands 15 default stop-only group tacacs+
+ip tacacs source-interface vlan100
+
+
+
+
+no tacacs-server host 10.95.6.201
+no tacacs-server host 10.95.6.202
+no tacacs-server directed-request
+no tacacs-server key Acs2Manedu
+no aaa new-model
+no aaa authentication login default group tacacs+ local
+no aaa authentication enable default group tacacs+ line
+no aaa authorization console
+no aaa authorization exec default group tacacs+ if-authenticated
+no aaa accounting exec default start-stop group tacacs+
+no aaa accounting commands 15 default stop-only group tacacs+
+no ip tacacs source-interface vlan100

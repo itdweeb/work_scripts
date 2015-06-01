@@ -1,0 +1,19 @@
+boot flash:/c3750-48TS-ipbasek9-mz.122-55.SE5.bin
+boot flash:/c3750-24PS-ipbasek9-mz.122-55.SE5.bin
+
+sh int fa0/0
+
+config t
+
+no logging console
+
+int fa0/0
+ip address 10.x.196.y 255.255.254.0
+int fa0/1
+ip address 10.x.196.y 255.255.254.0
+mac-address H.H.H
+int fa0/0
+
+ip route 10.200.253.10 255.255.255.255 10.71.196.1
+ip route 10.200.253.11 255.255.255.255 10.71.196.1
+ip route 0.0.0.0 0.0.0.0 10.71.196.1

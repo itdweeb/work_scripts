@@ -1,0 +1,17 @@
+64	Oakwood
+65	Garver
+66	East
+67	Helman
+68	Schwalm
+69	East St
+75	Calvin Ulrey (maybe 86)
+76	Science
+77	Library
+78	Winger
+79	PERC
+80	Security
+81	Clark
+82	Union
+83	Admin
+84	Cordier
+85	Academic

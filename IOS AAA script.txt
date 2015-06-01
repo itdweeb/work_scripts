@@ -1,0 +1,12 @@
+config t
+enable secret <secret>
+aaa new-model
+tacacs host 10.90.254.155 key ciscoacs
+aaa authentication login default group tacacs local-case
+no aaa authorization console
+aaa authorization exec default group tacacs
+aaa accounting command 0 default start-stop group tacacs
+aaa accounting command 1 default start-stop group tacacs
+aaa accounting command 15 default start-stop group tacacs
+exit
+wr

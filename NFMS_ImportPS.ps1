@@ -1,0 +1,3 @@
+$password = ConvertTo-SecureString "n1c0!87" -AsPlainText -Force
+
+Import-Csv C:\NFMS-Users.csv | ForEach { New-Mailbox -UserPrincipalName "$($_.UserPrincipalName)@lawfirm.local" -Alias $_.Alias -Database "Lawfirm_Staff" -Name $($_.First_Name + " " + $_.Last_Name) -OrganizationalUnit "OU=Employees,DC=lawfirm,dc=local" -Password $password -FirstName $_.First_Name -LastName $_.Last_Name -DisplayName $($_.First_Name + " " + $_.Last_Name) -ResetPasswordOnNextLogon $false}
