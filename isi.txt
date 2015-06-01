@@ -1,9 +1,0 @@
-old server:  isi01
-new server:  nmcallacct01
-
-
-FTP Service Account:	CiscoCDR
-Password:				Ci$c0CDR
-
-SQL Service Account:	SrvAcct_Infortel
-SQL Password:			!Nf0rte1
